@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<!-- navbar -->
+
+  <nav class="nav-menu">
+    <!-- left- navbar -->
+    <div class="left-nav">
+      <div class="nav-logo">
+        <img src="images/logo.svg" alt="the logo">
+        <button class="toggle-btn"><img src="images/icon-menu.svg" alt=""></button>
+      </div>
+      <div class="sidebar">
+        <button class="close-btn"><img src="images/icon-close-menu.svg" alt=""></button>
+        <div class="nav-items">
+          <div class="lead">
+            <button class="features"><span class="text">Features</span><span class="icon1"></span></button>
+          </div>
+          <ul class="dropdown">
+            <li><span class="img"><img src="images/icon-todo.svg" alt="to do"></span>Todo list</li>
+            <li><span class="img"><img src="images/icon-calendar.svg" alt="to do"></span>Calender</li>
+            <li><span class="img"><img src="images/icon-reminders.svg" alt="to do"></span>Reminders</li>
+            <li><span class="img"><img src="images/icon-planning.svg" alt="to do"></span>Planning</li>
+          </ul>  
+        </div>
+        <div class="nav-items">
+          <div class="lead">
+            <button class="company"><span class="text">Company</span><span class="icon2"></span></button>
+          </div>
+          <ul class="dropdown2">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="nav-items">
+          <a href="#">Careers</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">About</a>
+        </div>
+      </div>
+      </div>
+        
+      <!-- right navbar -->
+      <div class="right-nav sidebar2">
+        <div class="nav-items">
+          <a href="#">Login</a>
+        </div>
+        <div class="nav-items">
+          <button class="register">Register</button>
+        </div>
+      </div>
+  </nav>
+
+  <!-- CONTENTS -->
+  <section class="container">
+    <div class="contents">
+      <div class="left-contents">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="learn-more">Learn more</button>
+        
+          <ul class="sponsors">
+            <li><img src="images/client-databiz.svg" alt=""></li>
+            <li><img src="images/client-audiophile.svg" alt=""></li>
+            <li><img src="images/client-meet.svg" alt=""></li>
+            <li><img src="images/client-maker.svg" alt=""></li>
+          </ul>
+
+      </div>
+
+      <div class="right-contents">
+        <img src="images/image-hero-desktop.png" alt="" class="desktop">
+        <img src="images/image-hero-mobile.png" alt="" class="mobile">
+      </div>
+    </div>
+  </section>
+  <footer><div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div></footer>
+  
+  <script src="app.js"></script>
+
+</body>
+</html>

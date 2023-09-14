@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Figma</span>
+            <span class="try"></span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li>Framer</li>
+            <li>Sketch</li>
+            <li>Invision Studio</li>
+            <li class="active">Figma</li>
+            <li>Adobe XD</li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Figma</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li>Framer</li>
+            <li>Sketch</li>
+            <li>Invision Studio</li>
+            <li class="active">Figma</li>
+            <li>Adobe</li>
+        </ul>
+    </div>
+
+    <style>
+        .try{
+            background: url(images/icon-arrow-up.svg);
+            height: 10px;
+            width: 10px;
+            background-repeat: no-repeat;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: grey;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .dropdown {
+            min-width: 15em;
+            position: relative;
+            margin: 2em;
+        }
+
+        .dropdown * {
+            box-sizing: border-box;
+        }
+
+        .select {
+            background: #2a2f3b;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px #2a2f3b solid;
+            border-radius: 0.5em;
+            padding: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .select-clicked {
+            border: 2px #26489a solid;
+            box-shadow: 0 0 0.8rem #26489a;
+        }
+
+        .caret {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid #fff;
+            transition: 0.3s;
+        }
+
+        .menu {
+            background: rgb(82, 71, 71);
+        }
+
+    </style>
+</body>
+</html>
